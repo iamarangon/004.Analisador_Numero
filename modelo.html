@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex18 - Módulo de Exercícios</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Analisador de Números</h1>
+    </header>
+    
+    <section>
+        <div>
+            <p>Digite um número entre 1 e 100</p>
+            <p>
+                Numero:
+                <input type="number" name="numtxt" id="numtxt">
+                <input type="button" name="addnum" class="botao" id="addnum" value="Adicionar" onclick="genArray()">
+                <input type="button" class="botao" id="recarregar" value="Reiniciar" onclick="reiniciar()">
+            </p>
+        </div>
+
+        <div>
+            <p>
+                <select name="tabela" id="seltab" size="10" style="height:150px;width:250px;">
+                    <option disabled>Aguardando inserção de um número</option>
+                </select>
+            </p>
+            <p>
+                <input type="button" class="botao" id="verif" value="Analisar" onclick="verificar()">
+            </p>
+        </div>
+
+        <div id="res"></div>
+
+    </section>
+
+    <footer>
+        <p>&copy; Curso de JS e ES - Curso em Vídeo</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
